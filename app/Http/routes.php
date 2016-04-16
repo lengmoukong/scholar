@@ -11,3 +11,8 @@
 |
 */
 Route::get('/', 'Welcome\IndexController@getIndex');
+
+
+Route::controller('task/work','Task\Work');
+Route::controller('task/manage','Task\Manage');
+Route::controller('task','Task\Task');

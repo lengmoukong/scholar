@@ -20,6 +20,8 @@ class CreateUsersTable extends Migration
             $table->boolean('is_admin');
             $table->boolean('is_disabled');
             $table->boolean('is_check_email');
+            $table->bigInteger('task_id');  //如果为0 则当前没有正在工作的内容
+            $table->timestamp('task_begin_at');
             $table->rememberToken();
             $table->timestamps();
         });
