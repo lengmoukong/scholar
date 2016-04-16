@@ -10,8 +10,4 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-Route::get('/hello', function () {
-    return "Hello Word";
-});
-
-Route::controller('/', 'Welcome\IndexController');
+Route::get('/', 'Welcome\IndexController@getIndex');
